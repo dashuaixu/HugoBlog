@@ -2,7 +2,7 @@
 title = '下载工具Aira2使用技巧'
 date = 2024-02-18T22:49:04+08:00
 draft = false
-description = "Aira2强大的下载工具" 
+description = "Aira2，强大的下载工具，支持大批量高并发下载" 
 tags = [ "BT", "工具",] 
 categories = [ "工具"]
 +++
