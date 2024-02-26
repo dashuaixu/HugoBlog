@@ -138,7 +138,7 @@ params:
     disqus: your_disqus_name # enter disqus shortname here
     gitalk: # gitalk. https://gitalk.github.io/
       owner: dashuaixu #必须. GitHub repository 所有者，可以是个人或者组织。
-      admin: ['dashuaixu'] #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+      admin: dashuaixu  #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
       repo:  HugoBlog #必须. GitHub repository.
       ClientID: 9242285dc9da7d29dd2d #必须. GitHub Application Client ID.
       ClientSecret: 165f661bb01422b5809c399b33cde0058e60b3f7 #必须. GitHub Application Client Secret.
