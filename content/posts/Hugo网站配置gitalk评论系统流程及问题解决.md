@@ -1,5 +1,5 @@
 +++
-title = 'Hugo网站配置gitalk评论系统流程及问题解决'
+title = 'Hugo网站 配置gitalk评论系统 流程及问题解决'
 date = 2024-02-26T16:19:20+08:00
 draft = false
 description = "记录Hugo网站使用gitalk评论系统时遇到的问题，接口401和403，登陆网络错误等" 
