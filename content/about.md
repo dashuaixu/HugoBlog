@@ -2,11 +2,11 @@
 title = "About"
 description = "Aiden‘s blog"
 date = "2024-02-28"
+aliases = ["about-us","contact"]
 author = "Aiden"
-
 +++
 
+建设中
 
 
-此处建设中...
 
