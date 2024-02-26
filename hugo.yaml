@@ -35,31 +35,31 @@ menu:
   main:
     - identifier: home
       name: Home
-      title: Home
+      title: 首页
       url: /
       weight: 1
 
     - identifier: archives
       name: Archives
-      title: Archives
+      title: 文章
       url: /posts/
       weight: 2
 
     - identifier: categories
       name: Categories
-      title: Categories
+      title: 分类
       url: /categories/
       weight: 3
 
     - identifier: tags
       name: Tags
-      title: Tags
+      title: 标签
       url: /tags/
       weight: 4
 
     - identifier: about
       name: About
-      title: About
+      title: 关于
       url: /about/
       weight: 5
 
