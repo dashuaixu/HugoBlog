@@ -149,3 +149,7 @@ pure主题配置proxy参数流程，其他主题可参考
 
 [官方文档](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)中提到id默认是`location.href`，我们在自己的项目中改成`location.pathname`。
 
+还有一个可能是gitalk关联的repository是private，改为public试试。
+
+
+
