@@ -13,7 +13,7 @@ categories = [ "建站"]
 
 使用gitalk首先要[创建一个application](https://github.com/settings/applications/new)
 
-![创建gitalk application](/Users/xudashuai/Desktop/20240226162904.jpg)
+![创建gitalk application](https://minio.xudashuai.blog/blog/20240226162904.jpg)
 
 - Application name：随便写
 - Homepage URL：博客首页地址 **最好是写https地址，http的我没试过**
