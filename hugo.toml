@@ -128,7 +128,7 @@ sites = "weibo,qq,wechat,facebook,twitter"
 mobile_sites = "weibo,qq,qzone"
 
 [params.comment]
-enable = true
+type = "gitalk"
 disqus = "your_disqus_name"
 
 [params.comment.gitalk]
