@@ -46,7 +46,8 @@
         owner: '{{- $comment.gitalk.owner }}',
         admin: ['{{- $comment.gitalk.admin }}'],
         id: md5(location.pathname),
-        distractionFreeMode: true
+        distractionFreeMode: true,
+        proxy: '{{- $comment.gitalk.proxy }}'
     });
     gitalk.render('comments');
 </script>
