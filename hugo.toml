@@ -131,6 +131,14 @@ mobile_sites = "weibo,qq,qzone"
 disqus = "your_disqus_name"
 
 [params.comment.gitalk]
+clientID = "9242285dc9da7d29dd2d"
+clientSecret = "165f661bb01422b5809c399b33cde0058e60b3f7"
+repo = "https://github.com/dashuaixu/HugoBlog"
+owner = "dashuaixu"
+admin = "dashuaixu"
+distractionFreeMode: false
+language: zh
+perPage: 10
 
 [params.comment.valine]
 placeholder = "enjoy~"
