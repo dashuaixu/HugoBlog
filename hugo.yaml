@@ -142,6 +142,7 @@ params:
       repo:  https://github.com/dashuaixu/HugoBlog #必须. GitHub repository.
       ClientID: 9242285dc9da7d29dd2d #必须. GitHub Application Client ID.
       ClientSecret: 165f661bb01422b5809c399b33cde0058e60b3f7 #必须. GitHub Application Client Secret.
+      id: location.pathname
     valine: # Valine. https://valine.js.org
       appid: # your leancloud application appid
       appkey: # your leancloud application appkey
