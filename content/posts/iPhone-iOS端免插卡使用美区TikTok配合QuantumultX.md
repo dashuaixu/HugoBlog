@@ -77,7 +77,7 @@ iPhone需要准备：
    1. 右键点击iTunes资料库中的TikTok安装包：在Windows资源管理器中打开，会看见一个.ipa文件
    2. 电脑通过数据线连接iPhone，打开爱思助手，点击`应用游戏`，将ipa文件拖入即可安装
 
-![爱思安装TikTok ipa.png](https://minio.xudashuai.blog/blog/爱思安装TikTok ipa.png)
+![爱思安装ipa.png](https://minio.xudashuai.blog/blog/爱思安装ipa.png)
 
 ## 四、更新最新版TikTok
 
