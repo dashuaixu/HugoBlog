@@ -5,7 +5,7 @@ copyright: CC BY 4.0 CN
 defaultContentLanguage: zh  # en/zh/...
 footnoteReturnLinkContents: ↩
 hasCJKLanguage: true
-paginate: 7
+paginate: 10
 enableEmoji: true
 PygmentsCodeFences: false
 enableRobotsTXT: true
