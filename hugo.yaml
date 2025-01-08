@@ -8,6 +8,7 @@ hasCJKLanguage: true
 paginate: 7
 enableEmoji: true
 PygmentsCodeFences: false
+enableRobotsTXT: true
 googleAnalytics: ""      # UA-XXXXXXXX-X 
 permalinks:
   posts: /:year/:month/:filename/
@@ -27,7 +28,7 @@ outputs:
     home: ["HTML","RSS","SearchIndex"]  # recommend not to modify
 # sitemap
 sitemap:
-  changefreq: monthly
+  changefreq: weekly
   filename: sitemap.xml
   priority: 0.5
 
