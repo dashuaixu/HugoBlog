@@ -63,7 +63,7 @@ iPhone需要准备：
 
 4. 返回iTunes页面，点击TikTok下载按钮：
 
-![下载TikTok.jpeg](https://minio.xudashuai.blog/blog/下载TikTok.jpeg)
+![](https://minio.xudashuai.blog/blog/下载TikTok.JPG)
 
 5. 此时iTunes下载进度卡死不动，解决步骤：
    1. iTunes点击暂停下载
@@ -71,13 +71,13 @@ iPhone需要准备：
    3. iTunes点击恢复下载
 6. 检查下载结果版本：右键点击TikTok，查看简介：
 
-![检查TikTok下载版本.png](https://minio.xudashuai.blog/blog/检查TikTok下载版本.png)
+![](https://minio.xudashuai.blog/blog/检查TikTok下载版本.PNG)
 
 7. 使用爱思助手安装TikTok步骤：
    1. 右键点击iTunes资料库中的TikTok安装包：在Windows资源管理器中打开，会看见一个.ipa文件
    2. 电脑通过数据线连接iPhone，打开爱思助手，点击`应用游戏`，将ipa文件拖入即可安装
 
-![爱思安装ipa.png](https://minio.xudashuai.blog/blog/爱思安装ipa.png)
+![](https://minio.xudashuai.blog/blog/爱思安装ipa.PNG)
 
 ## 四、更新最新版TikTok
 
@@ -87,7 +87,7 @@ iPhone需要准备：
 
 此时再打开手机上的App Store，搜索TikTok，点击更新，即可正常使用。
 
-
+---
 
 文章参考：
 
