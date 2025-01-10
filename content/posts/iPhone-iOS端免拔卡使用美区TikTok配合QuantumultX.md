@@ -55,9 +55,9 @@ iPhone需要准备：
 
 3. 打开旧版本app搜索工具，搜索TikTok，双击打开，选择21.1.0版本，双击打开：
 
-![搜索美区TikTok.png](https://minio.xudashuai.blog/blog/搜索美区TikTok.png)
+![](https://minio.xudashuai.blog/blog/搜索美区TikTok.PNG)
 
-![选择21.1.0版本.png](https://minio.xudashuai.blog/blog/选择21.1.0版本.png)
+![](https://minio.xudashuai.blog/blog/选择21.1.0版本.PNG)
 
 ![21.1.0版本拦截.png](https://minio.xudashuai.blog/blog/21.1.0版本拦截.png)
 
