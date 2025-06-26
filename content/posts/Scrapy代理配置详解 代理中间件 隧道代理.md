@@ -5,6 +5,7 @@ draft = false
 description = "Scrapy代理配置使用记录，包括各种形式代理基础使用和代理中间件示例;解决了Scrapy使用代理隧道验证不成功的问题" 
 tags = [ "Scrapy", "Python",] 
 categories = [ "Python"]
+
 +++
 # Scrapy代理配置使用记录
 
@@ -49,7 +50,7 @@ class TestSpider(scrapy.Spider):
 
 这里复习一下scrapy的架构：
 
-![scrapy_architecture](https://xudashuai.synology.me:19000/blog/scrapy_architecture.png)
+![scrapy_architecture_02](https://minio.xudashuai.blog/blog/scrapy_architecture_02.jpg)
 
 
 
