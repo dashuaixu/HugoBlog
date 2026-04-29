@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>建站 on 咔咔Aiden&#39;s Blog</title>
+    <link>https://xudashuai.blog/categories/%E5%BB%BA%E7%AB%99/</link>
+    <description>Recent content in 建站 on 咔咔Aiden&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>CC BY 4.0 CN</copyright>
+    <lastBuildDate>Mon, 26 Feb 2024 16:19:20 +0800</lastBuildDate>
+    
+        <atom:link href="https://xudashuai.blog/categories/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python批量解压zip 得到的文件名乱码问题</title>
+      <link>https://xudashuai.blog/2024/03/python%E6%89%B9%E9%87%8F%E8%A7%A3%E5%8E%8Bzip%E5%BE%97%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%90%8D%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 11 Mar 2024 22:50:56 +0800</pubDate>
+      
+      <guid>https://xudashuai.blog/2024/03/python%E6%89%B9%E9%87%8F%E8%A7%A3%E5%8E%8Bzip%E5%BE%97%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%90%8D%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</guid>
+      <description>场景： 解压几万个zip包，其中得到的少部分文件名是乱码的，大部分没问题。 功能： 批量解压某个文件夹内的zip包到目标文件夹 修复乱码的文件名 工具</description>
+    </item>
+    
+    <item>
+      <title>Supervisor安装及使用</title>
+      <link>https://xudashuai.blog/2024/02/supervisor%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Wed, 28 Feb 2024 22:26:32 +0800</pubDate>
+      
+      <guid>https://xudashuai.blog/2024/02/supervisor%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</guid>
+      <description>安装 centos： yum install supervisor pip：pip install supervisor 配置 配置文件路径：/etc/supervisord.conf 自定义配置文件放置路径：/etc/su</description>
+    </item>
+    
+    <item>
+      <title>Hugo网站 配置gitalk评论系统 流程及问题解决</title>
+      <link>https://xudashuai.blog/2024/02/hugo%E7%BD%91%E7%AB%99-%E9%85%8D%E7%BD%AEgitalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F-%E6%B5%81%E7%A8%8B%E5%8F%8A%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</link>
+      <pubDate>Mon, 26 Feb 2024 16:19:20 +0800</pubDate>
+      
+      <guid>https://xudashuai.blog/2024/02/hugo%E7%BD%91%E7%AB%99-%E9%85%8D%E7%BD%AEgitalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F-%E6%B5%81%E7%A8%8B%E5%8F%8A%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</guid>
+      <description>本文的前提是使用的Hugo主题带有gitalk功能。 这里使用主题pure作为例子，其他主题的配置方式大致都是一样的。 使用gitalk首先要创</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://xudashuai.blog/about/</link>
+      <pubDate>Mon, 26 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://xudashuai.blog/about/</guid>
+      <description>建设中</description>
+    </item>
+    
+    <item>
+      <title>如何从0到1 搭建完全免费的 个人博客网站</title>
+      <link>https://xudashuai.blog/2024/02/%E5%A6%82%E4%BD%95%E4%BB%8E0%E5%88%B01-%E6%90%AD%E5%BB%BA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</link>
+      <pubDate>Wed, 21 Feb 2024 21:28:25 +0800</pubDate>
+      
+      <guid>https://xudashuai.blog/2024/02/%E5%A6%82%E4%BD%95%E4%BB%8E0%E5%88%B01-%E6%90%AD%E5%BB%BA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</guid>
+      <description>在建设个人blog网站的路上，经历了Wordpress，源码部署，到现在的Hugo框架。在此也总结一下经验： Wordpress虽然已经有很多</description>
+    </item>
+    
+    <item>
+      <title>索尼电视截图 智能电视截图 不用安装任何软件</title>
+      <link>https://xudashuai.blog/2024/02/%E7%B4%A2%E5%B0%BC%E7%94%B5%E8%A7%86%E6%88%AA%E5%9B%BE-%E6%99%BA%E8%83%BD%E7%94%B5%E8%A7%86%E6%88%AA%E5%9B%BE-%E4%B8%8D%E7%94%A8%E5%AE%89%E8%A3%85%E4%BB%BB%E4%BD%95%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Wed, 21 Feb 2024 20:29:12 +0800</pubDate>
+      
+      <guid>https://xudashuai.blog/2024/02/%E7%B4%A2%E5%B0%BC%E7%94%B5%E8%A7%86%E6%88%AA%E5%9B%BE-%E6%99%BA%E8%83%BD%E7%94%B5%E8%A7%86%E6%88%AA%E5%9B%BE-%E4%B8%8D%E7%94%A8%E5%AE%89%E8%A3%85%E4%BB%BB%E4%BD%95%E8%BD%AF%E4%BB%B6/</guid>
+      <description>操作逻辑为：使用电脑在局域网内，通过adb命令连接到电视，使用adb命令截图，并将图片传回到电脑中。 整个过程就3条命令，还是比较简单的。但是</description>
+    </item>
+    
+    <item>
+      <title>Scrapy代理配置详解 代理中间件 隧道代理</title>
+      <link>https://xudashuai.blog/2024/02/scrapy%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3-%E4%BB%A3%E7%90%86%E4%B8%AD%E9%97%B4%E4%BB%B6-%E9%9A%A7%E9%81%93%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Mon, 19 Feb 2024 14:32:42 +0800</pubDate>
+      
+      <guid>https://xudashuai.blog/2024/02/scrapy%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3-%E4%BB%A3%E7%90%86%E4%B8%AD%E9%97%B4%E4%BB%B6-%E9%9A%A7%E9%81%93%E4%BB%A3%E7%90%86/</guid>
+      <description>Scrapy代理配置使用记录 废话不说，直接上重点，有哪些代理配置方式？ 在spider代码中配置；这种方式极不推荐，虽然可以实现，但是spid</description>
+    </item>
+    
+    <item>
+      <title>下载工具Aira2使用技巧</title>
+      <link>https://xudashuai.blog/2024/02/%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7aira2%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Sun, 18 Feb 2024 22:49:04 +0800</pubDate>
+      
+      <guid>https://xudashuai.blog/2024/02/%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7aira2%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
+      <description>批量下载文件的强大工具&amp;ndash;Aria2 Aria2是一个强大的下载工具，我的每个电脑都必装的软件。它让下载文件变的非常简单，我曾用它下</description>
+    </item>
+    
+  </channel>
+</rss>

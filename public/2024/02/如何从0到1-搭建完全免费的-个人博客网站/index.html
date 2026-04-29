@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>
+        如何从0到1 搭建完全免费的 个人博客网站 - 咔咔Aiden&#39;s Blog
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="在建设个人blog网站的路上，经历了Wordpress，源码部署，到现在的Hugo框架。在此也总结一下经验" />
+    <meta name="generator" content="Hugo 0.122.0 with theme pure" />
+    <title>如何从0到1 搭建完全免费的 个人博客网站 - 咔咔Aiden&#39;s Blog</title>
+    
+    
+    <link rel="stylesheet" href="https://xudashuai.blog/css/style.min.e64d754037c0ee0ec4e20ab1d6f07740ace61729bc03850559b8caa21ae4a597.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="如何从0到1 搭建完全免费的 个人博客网站" />
+<meta property="og:description" content="在建设个人blog网站的路上，经历了Wordpress，源码部署，到现在的Hugo框架。在此也总结一下经验" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xudashuai.blog/2024/02/%E5%A6%82%E4%BD%95%E4%BB%8E0%E5%88%B01-%E6%90%AD%E5%BB%BA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-21T21:28:25+08:00" />
+<meta property="article:modified_time" content="2024-02-21T21:28:25+08:00" />
+
+<meta itemprop="name" content="如何从0到1 搭建完全免费的 个人博客网站">
+<meta itemprop="description" content="在建设个人blog网站的路上，经历了Wordpress，源码部署，到现在的Hugo框架。在此也总结一下经验"><meta itemprop="datePublished" content="2024-02-21T21:28:25+08:00" />
+<meta itemprop="dateModified" content="2024-02-21T21:28:25+08:00" />
+<meta itemprop="wordCount" content="1942">
+<meta itemprop="keywords" content="建站,Hugo,Cloudflare,GitHub," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="如何从0到1 搭建完全免费的 个人博客网站"/>
+<meta name="twitter:description" content="在建设个人blog网站的路上，经历了Wordpress，源码部署，到现在的Hugo框架。在此也总结一下经验"/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-white" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/dashuaixu" target="_blank">
+            <img class="img-circle img-rotate" src="https://xudashuai.blog/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">咔咔Aiden</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Shanghai, China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">首页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">文章</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">分类</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">标签</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">关于</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>enjoy~</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div id="tag-cloud-list" class="widget-body">
+            
+            
+            <a href="https://xudashuai.blog/tags/bt/" class="tag-list-link" rel="1">bt<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://xudashuai.blog/tags/cloudflare/" class="tag-list-link" rel="1">cloudflare<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://xudashuai.blog/tags/gitalk/" class="tag-list-link" rel="1">gitalk<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://xudashuai.blog/tags/github/" class="tag-list-link" rel="2">github<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="https://xudashuai.blog/tags/hugo/" class="tag-list-link" rel="2">hugo<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="https://xudashuai.blog/tags/python/" class="tag-list-link" rel="2">python<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="https://xudashuai.blog/tags/scrapy/" class="tag-list-link" rel="1">scrapy<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://xudashuai.blog/tags/%E5%B7%A5%E5%85%B7/" class="tag-list-link" rel="2">工具<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="https://xudashuai.blog/tags/%E5%BB%BA%E7%AB%99/" class="tag-list-link" rel="2">建站<span
+               class="tag-list-count">2</span></a>
+            
+    </div>
+<script>
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    tagCloud('#tag-cloud-list a',  8 ,  20 );
+  }
+};
+
+function tagCloud(where, min, max) {
+  let iMax = 0;
+  let iMin = 0;
+  $(where).each(function() {
+    let weight = Number($(this).attr("rel"));
+    if(iMax < weight) iMax = weight;
+    if(iMin > weight || iMin == 0) iMin = weight;
+  });
+  let step = (max - min)/(iMax - iMin);
+  $(where).each(function() {
+    let weight = $(this).attr("rel") - iMin;
+    $(this).css({"font-size": min + (weight * step) + 'px'});
+  });
+};
+</script>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://xudashuai.blog/categories/python/" class="category-list-link">python</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://xudashuai.blog/categories/%E5%B7%A5%E5%85%B7/" class="category-list-link">工具</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://xudashuai.blog/categories/%E5%BB%BA%E7%AB%99/" class="category-list-link">建站</a><span class="category-list-count">2</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://xudashuai.blog/tags/bt/" class="tag-list-link">bt</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://xudashuai.blog/tags/cloudflare/" class="tag-list-link">cloudflare</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://xudashuai.blog/tags/gitalk/" class="tag-list-link">gitalk</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://xudashuai.blog/tags/github/" class="tag-list-link">github</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://xudashuai.blog/tags/hugo/" class="tag-list-link">hugo</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://xudashuai.blog/tags/python/" class="tag-list-link">python</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://xudashuai.blog/tags/scrapy/" class="tag-list-link">scrapy</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://xudashuai.blog/tags/%E5%B7%A5%E5%85%B7/" class="tag-list-link">工具</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://xudashuai.blog/tags/%E5%BB%BA%E7%AB%99/" class="tag-list-link">建站</a><span
+                    class="tag-list-count">2</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://xudashuai.blog/2024/03/python%E6%89%B9%E9%87%8F%E8%A7%A3%E5%8E%8Bzip%E5%BE%97%E5%88%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%90%8D%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" class="title">Python批量解压zip 得到的文件名乱码问题</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2024-03-11 22:50:56 &#43;0800 CST" itemprop="datePublished">2024-03-11</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://xudashuai.blog/2024/02/supervisor%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" class="title">Supervisor安装及使用</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2024-02-28 22:26:32 &#43;0800 CST" itemprop="datePublished">2024-02-28</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://xudashuai.blog/2024/02/hugo%E7%BD%91%E7%AB%99-%E9%85%8D%E7%BD%AEgitalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F-%E6%B5%81%E7%A8%8B%E5%8F%8A%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" class="title">Hugo网站 配置gitalk评论系统 流程及问题解决</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2024-02-26 16:19:20 &#43;0800 CST" itemprop="datePublished">2024-02-26</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://xudashuai.blog/2024/02/%E5%A6%82%E4%BD%95%E4%BB%8E0%E5%88%B01-%E6%90%AD%E5%BB%BA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" class="title">如何从0到1 搭建完全免费的 个人博客网站</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2024-02-21 21:28:25 &#43;0800 CST" itemprop="datePublished">2024-02-21</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://xudashuai.blog/2024/02/%E7%B4%A2%E5%B0%BC%E7%94%B5%E8%A7%86%E6%88%AA%E5%9B%BE-%E6%99%BA%E8%83%BD%E7%94%B5%E8%A7%86%E6%88%AA%E5%9B%BE-%E4%B8%8D%E7%94%A8%E5%AE%89%E8%A3%85%E4%BB%BB%E4%BD%95%E8%BD%AF%E4%BB%B6/" class="title">索尼电视截图 智能电视截图 不用安装任何软件</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2024-02-21 20:29:12 &#43;0800 CST" itemprop="datePublished">2024-02-21</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2024/02/%E5%A6%82%E4%BD%95%E4%BB%8E0%E5%88%B01-%E6%90%AD%E5%BB%BA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/"
+    >如何从0到1 搭建完全免费的 个人博客网站</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://xudashuai.blog/2024/02/%E5%A6%82%E4%BD%95%E4%BB%8E0%E5%88%B01-%E6%90%AD%E5%BB%BA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" class="article-date">
+  <time datetime="2024-02-21 21:28:25 &#43;0800 CST" itemprop="datePublished">2024-02-21</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/%E5%BB%BA%E7%AB%99/"> 建站 </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/%E5%BB%BA%E7%AB%99/"> 建站 </a>
+    <a class="article-tag-link" href="/tags/hugo/"> Hugo </a>
+    <a class="article-tag-link" href="/tags/cloudflare/"> Cloudflare </a>
+    <a class="article-tag-link" href="/tags/github/"> GitHub </a>
+  </span>
+
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2024/02/%E5%A6%82%E4%BD%95%E4%BB%8E0%E5%88%B01-%E6%90%AD%E5%BB%BA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1942字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>在建设个人blog网站的路上，经历了Wordpress，源码部署，到现在的Hugo框架。在此也总结一下经验：</p>
+<ul>
+<li>Wordpress虽然已经有很多一件部署的脚本了，但也还是要有自己的服务器，域名以及一些动手能力，另外数据转移也有些麻烦</li>
+<li>源码部署网站我一直用的是<a href="https://github.com/liangliangyy/DjangoBlog">基于Django的博客系统</a>界面简洁美观，文档也很详细，但是需要自己买域名，要备案，不备案的话需要买个香港的服务器，如果不是经常写东西，性价比不高</li>
+<li>Hugo以前经常看见没用过，这次正好体验一下</li>
+</ul>
+<h2 id="hugo在mac电脑上的安装和基础使用">Hugo在Mac电脑上的安装和基础使用</h2>
+<p>关于Hugo的介绍这里不多介绍，这里有<a href="https://gohugo.io/">官方网站</a>。</p>
+<p>Hugo建站的流程可总结为以下几步：</p>
+<ul>
+<li>安装Hugo</li>
+<li>建立Hugo站点</li>
+<li>安装配置主题</li>
+<li>编写文章</li>
+<li>启动本地Web服务器查看站点</li>
+<li>推送站点文件到GitHub</li>
+<li>使用<a href="https://www.cloudflare.com/">Cloudflare</a>托管站点</li>
+</ul>
+<p>完成上述步骤后即可拥有自己的博客网站了，全程用到的技能点就是Hugo的安装，GitHub的简单实用以及Cloudflare的托管配置，全程免费，没有任何费用，本篇文章记录也就到此结束了。</p>
+<p>当然为了站点的美观和个性化，以及更好的使用体验，后续文章将介绍：</p>
+<ul>
+<li>自定义网站域名</li>
+<li>使用图床存储网站的图片</li>
+</ul>
+<h3 id="安装">安装</h3>
+<p>官方也有详细的安装文档<a href="https://gohugo.io/installation/">Installation</a>，Mac上推荐使用<a href="https://brew.sh/">Homebrew</a>安装。</p>
+<pre><code class="language-shell">brew install hugo
+</code></pre>
+<p>安装成功后，查看Hugo版本信息（<strong>下文有用</strong>），我这里可以看到版本信息是<code>Hugo v0.114.0</code></p>
+<pre><code class="language-shell">xudashuai@mbp14 $ hugo -v
+WARN  deprecated: --verbose was deprecated in Hugo v0.114.0 and will be removed in a future release. use --logLevel info
+Total in 2 ms
+Error: Unable to locate config file or config directory. Perhaps you need to create a new site.
+Run `hugo help new` for details.
+</code></pre>
+<h3 id="创建站点">创建站点</h3>
+<p>Hugo的创建站点命令为：<code>hugo new site 站点名称</code>，接下来我将创建一个名为<code>TestSite</code>的站点进行全程的演示。</p>
+<pre><code class="language-shell">xudashuai@mbp14 $ hugo new site TestSite
+Congratulations! Your new Hugo site was created in /Users/xudashuai/Desktop/blogs/TestSite.
+
+Just a few more steps...
+
+1. Change the current directory to /Users/xudashuai/Desktop/blogs/TestSite.
+2. Create or install a theme:
+   - Create a new theme with the command &quot;hugo new theme &lt;THEMENAME&gt;&quot;
+   - Install a theme from https://themes.gohugo.io/
+3. Edit hugo.toml, setting the &quot;theme&quot; property to the theme name.
+4. Create new content with the command &quot;hugo new content &lt;SECTIONNAME&gt;/&lt;FILENAME&gt;.&lt;FORMAT&gt;&quot;.
+5. Start the embedded web server with the command &quot;hugo server --buildDrafts&quot;.
+
+See documentation at https://gohugo.io/.
+</code></pre>
+<p>然后按照提示信息做完1-5步</p>
+<ol>
+<li>进入站点目录</li>
+</ol>
+<pre><code class="language-shell">xudashuai@mbp14 $ cd TestSite
+</code></pre>
+<ol start="2">
+<li>安装主题</li>
+</ol>
+<p>我这里随便安装了一个主题<a href="https://themes.gohugo.io/themes/hugo-book/#installation">hugo-book</a>，更多主题请浏览<a href="https://themes.gohugo.io/">Hugo Themes</a>。</p>
+<p>我这里使用git clone的方式将主题包下载到站点的themes文件夹下，其他安装方式请查看对应主题的介绍页面。</p>
+<pre><code class="language-shell">xudashuai@mbp14 $ git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book
+</code></pre>
+<ol start="3">
+<li>修改站点配置，指定使用的主题名</li>
+</ol>
+<p>编辑hugo.toml文件，指定刚才安装的主题。</p>
+<pre><code class="language-toml">baseURL = 'https://example.org/'
+languageCode = 'zh'
+title = 'My New Hugo Site'
+theme = 'hugo-book'
+</code></pre>
+<ol start="4">
+<li>编写新文章</li>
+</ol>
+<p>Hugo创建新文章的命令为<code>hugo new content 文件夹/文件名</code></p>
+<pre><code class="language-shell">xudashuai@mbp14 $ hugo new content posts/第一篇文件.md 
+Content &quot;/Users/xudashuai/Desktop/blogs/TestSite/content/posts/第一篇文件.md&quot; created
+</code></pre>
+<p>我这里创建了一篇文章，放在了<code>TestSite/content/posts</code>文件夹下，所有文章都会放入站点的<code>content</code>文件夹中，二级菜单可视为对文章的分类，<strong>有些主题会要求文章都放入<code>posts</code>文件夹下，需要注意看主题要求，否则主题显示会出问题。</strong></p>
+<ol start="5">
+<li>打开web服务器查看效果</li>
+</ol>
+<pre><code class="language-shell">xudashuai@mbp14 $ hugo server --buildDrafts
+Watching for changes in /Users/xudashuai/Desktop/blogs/TestSite/{archetypes,assets,content,data,i18n,layouts,static,themes}
+Watching for config changes in /Users/xudashuai/Desktop/blogs/TestSite/hugo.toml
+Start building sites … 
+hugo v0.122.0-b9a03bd59d5f71a529acb3e33f995e0ef332b3aa+extended darwin/arm64 BuildDate=2024-01-26T15:54:24Z VendorInfo=brew
+
+
+                   | EN  
+-------------------+-----
+  Pages            | 10  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     |  0  
+  Processed images |  0  
+  Aliases          |  2  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Built in 11 ms
+Environment: &quot;development&quot;
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) 
+Press Ctrl+C to stop
+</code></pre>
+<p>然后浏览器打开<code>http://localhost:1313/</code>即可看到网站效果</p>
+<p><img src="https://minio.xudashuai.blog/blog/20240223225537.jpg" alt="第一次预览网站"></p>
+<p>至此已经在本地可以写文章并查看自己的网站了。</p>
+<p>要实现网站的公网访问，接下来将需要把站点的文件上传到GitHub，然后托管到Cloudflare Pages。</p>
+<h3 id="站点文件上传至github仓库">站点文件上传至GitHub仓库</h3>
+<p>打开自己的<a href="https://github.com/">GitHub</a>创建一个仓库，我将创建一个名为<code>TestBlog</code>的仓库进行演示：</p>
+<p><img src="https://minio.xudashuai.blog/blog/20240223210551.jpg" alt="GitHub创建仓库"></p>
+<p>公共仓库和私有仓库都是可以的。</p>
+<p>进入站点根目录，然后依次运行下列命令将站点文件推送到GitHub仓库：</p>
+<pre><code class="language-shell">xudashuai@mbp14 $ git init
+</code></pre>
+<pre><code class="language-shell">xudashuai@mbp14 $ git add .
+</code></pre>
+<pre><code class="language-shell">xudashuai@mbp14 $ git commit -m &quot;first commit&quot;
+</code></pre>
+<pre><code class="language-shell">xudashuai@mbp14 $ git remote add origin 刚才创建的仓库地址
+</code></pre>
+<pre><code class="language-shell">xudashuai@mbp14 $ git push -u origin main
+</code></pre>
+<h3 id="站点托管到cloudflare">站点托管到Cloudflare</h3>
+<p>登陆到<a href="https://dash.cloudflare.com/">Cloudflare</a>管理后台，右上角选择<code>简体中文</code>，左侧下拉点击<code>Workers 和 Pages</code>，点击<code>创建应用程序</code>：</p>
+<p><img src="https://minio.xudashuai.blog/blog/2311708694559_.pic.jpg" alt="cloudflare 创建 pages"></p>
+<p>选择<code>Pages</code>标签，点击<code>连接到Git</code>:</p>
+<p><img src="https://minio.xudashuai.blog/blog/20240223212548.jpg" alt="连接到Git"></p>
+<p>然后关联自己的GitHub账号，选择对应的仓库，点击<code>开始设置</code>：</p>
+<blockquote>
+<p>如果没有仓库权限，请点击下方的链接进行权限配置</p>
+</blockquote>
+<p><img src="https://minio.xudashuai.blog/blog/20240223213001.jpg" alt="关联仓库"></p>
+<p>这里的<code>框架预设</code>选择Hugo，添加一个环境变量<code>HUGO_VERSION</code>值为上面提到的本地安装的Hugo的版本，我这里是<code>0.114.0</code>，其他默认，点击<code>保存并部署</code>：</p>
+<p><img src="https://minio.xudashuai.blog/blog/20240223215035.jpg" alt="设置构建和部署"></p>
+<p>构建成功后会得到一个免费的公网链接，点击查看站点：</p>
+<p><img src="https://minio.xudashuai.blog/blog/20240223225901.jpg" alt="构建成功"></p>
+<p>预览效果：</p>
+<p><img src="https://minio.xudashuai.blog/blog/20240223225954.jpg" alt=""></p>
+<p>至此，一个免费的个人博客站点就建设完成了！你可以尝试切换主题，编写文章，然后推送到GitHub，Cloudflare将会自动拉取新的文件完成站点的构建和发布。</p>
+<blockquote>
+<p>上面的网站地址：https://testblog-ac7.pages.dev/</p>
+</blockquote>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://xudashuai.blog/2024/02/%E5%A6%82%E4%BD%95%E4%BB%8E0%E5%88%B01-%E6%90%AD%E5%BB%BA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" title="如何从0到1 搭建完全免费的 个人博客网站" target="_blank" rel="external">https://xudashuai.blog/2024/02/%E5%A6%82%E4%BD%95%E4%BB%8E0%E5%88%B01-%E6%90%AD%E5%BB%BA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License: </strong>
+        <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/dashuaixu" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://xudashuai.blog/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/dashuaixu" target="_blank"><span class="text-dark">咔咔Aiden</span><small class="ml-1x"></small></a></h3>
+        <div>爱好工作 不爱上班</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://xudashuai.blog/2024/02/%E7%B4%A2%E5%B0%BC%E7%94%B5%E8%A7%86%E6%88%AA%E5%9B%BE-%E6%99%BA%E8%83%BD%E7%94%B5%E8%A7%86%E6%88%AA%E5%9B%BE-%E4%B8%8D%E7%94%A8%E5%AE%89%E8%A3%85%E4%BB%BB%E4%BD%95%E8%BD%AF%E4%BB%B6/" title="索尼电视截图 智能电视截图 不用安装任何软件"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://xudashuai.blog/about/"
+                    title="About"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/dashuaixu" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://xudashuai.blog/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2023  -
+    2025
+    <div class="publishby">
+    </div>
+    
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('\x3Cscript src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://xudashuai.blog/js/application.min.e4989ab4dc212027af8773861b05b6bc333a1217f6b0a1b3377a3a3dbd454483.js"></script>
+<script src="https://xudashuai.blog/js/plugin.min.b9ee51155841bade74556577e3c2f8724a1a5c2020aa33fe393608d9a2d5dad8.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: 'https:\/\/xudashuai.blog',
+            CONTENT_URL: 'https:\/\/xudashuai.blog\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://xudashuai.blog/js/insight.min.716b0c6a00b68ccc31a2b65345f3412f4246ffa94a90f8e25d525528b4504f9937880692bbe619023233caba5d0a17ebe23d7cfb57cd3a88f23ea337ad5e4d00.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '9242285dc9da7d29dd2d',
+        clientSecret: '165f661bb01422b5809c399b33cde0058e60b3f7',
+        repo: 'HugoBlog',
+        owner: 'dashuaixu',
+        admin: ['dashuaixu'],
+        id: md5(location.pathname),
+        distractionFreeMode: true,
+        proxy: 'https:\/\/cors-anywhere.azm.workers.dev\/https:\/\/github.com\/login\/oauth\/access_token'
+    });
+    gitalk.render('comments');
+</script>
+
+  </body>
+</html>
